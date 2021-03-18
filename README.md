@@ -1,3 +1,5 @@
+![Article](https://github.com/timtroendle/signature-layout/actions/workflows/article.yaml/badge.svg)
+
 # Signature Layout
 
 The signature layout of my articles.
