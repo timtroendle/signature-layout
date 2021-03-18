@@ -282,6 +282,7 @@ table thead th, table thead td {
     font-weight: bold;
     padding-top: 7px;
     border-bottom: solid 1px #000;
+    text-transform: capitalize;
 }
 
 table tfoot th, table tfoot td {
