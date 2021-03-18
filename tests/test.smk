@@ -10,9 +10,9 @@ rule test:
 def pandoc_options(wildcards):
     suffix = wildcards["suffix"]
     if suffix == "html":
-        return "--self-contained --css=../layout/article.css --to html5"
+        return "--self-contained --to html5"
     elif suffix == "pdf":
-        return "--css=../layout/article.css --pdf-engine weasyprint"
+        return "--pdf-engine weasyprint"
     elif suffix == "docx":
         return []
     else:
@@ -25,6 +25,7 @@ rule article:
         "tests/literature.yaml",
         "tests/article.md",
         "tests/apa.csl",
+        "layout/reset.css",
         "layout/article.css",
         "layout/fonts/KlinicSlabBook.otf",
         "layout/fonts/KlinicSlabBookIt.otf",

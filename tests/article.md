@@ -11,6 +11,9 @@ bibliography: literature.yaml
 csl: apa.csl
 link-citations: True
 lang: en-GB
+css:
+    - ../layout/reset.css
+    - ../layout/article.css
 xnos-cleveref: True
 fignos-plus-name: Figure
 tablenos-plus-name: Table
