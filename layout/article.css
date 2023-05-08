@@ -221,13 +221,20 @@ form, legend, label {
     line-height: 18px
 }
 
-caption, figcaption {
+table caption, figcaption {
     font-size: smaller;
-    page-break-before: avoid;
     page-break-inside: avoid;
 }
 
-caption span, figcaption span {
+figcaption {
+    page-break-before: avoid;
+}
+
+table caption {
+    page-break-after: avoid;
+}
+
+table caption span, figcaption span {
     font-weight: bold;
 }
 
@@ -305,8 +312,6 @@ table tbody tr:nth-child(odd) th, table tbody tr:nth-child(odd) td {
 table caption {
     top: 5px;
     margin-bottom: 1em;
-    page-break-after: avoid;
-    page-break-inside: avoid;
 }
 
 #refs {
