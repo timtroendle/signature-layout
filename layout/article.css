@@ -103,10 +103,6 @@ p {
     margin-bottom: 1em;
 }
 
-div.fignos, div.tablenos {
-    margin-bottom: 1em;
-}
-
 p.author {
     font-style: italic;
     line-height: .3em;
@@ -175,7 +171,8 @@ sub {
 }
 
 figure {
-    margin: 0;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
     font-size: smaller;
 }
 
@@ -269,6 +266,7 @@ table {
     border-top: solid 1px #000;
     border-bottom: solid 1px #000;
     margin-top: 1em;
+    margin-bottom: 1.5em;
     width: 100%;
     font-size: smaller;
 }
