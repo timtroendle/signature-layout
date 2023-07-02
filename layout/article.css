@@ -137,7 +137,7 @@ b, strong {
     font-weight: bold
 }
 
-dfn {
+i, em, dfn {
     font-style: italic
 }
 
