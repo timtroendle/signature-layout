@@ -141,6 +141,10 @@ i, em, dfn {
     font-style: italic
 }
 
+mark {
+    background-color: #FFD700;
+}
+
 code, kbd, pre, samp {
     font-family: monospace, serif
 }
