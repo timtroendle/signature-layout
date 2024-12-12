@@ -8,12 +8,12 @@ jobs:
             run:
                 shell: bash -l {0}
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
             - name: Setup conda environment
-              uses: conda-incubator/setup-miniconda@v2
+              uses: conda-incubator/setup-miniconda@v3
               with:
                 auto-update-conda: true
-                python-version: 3.7
+                python-version: 3.11
                 activate-environment: signature-layout-test
                 environment-file: tests/environment.yaml
             - run: snakemake -s tests/test.smk --cores 1

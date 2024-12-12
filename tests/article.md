@@ -14,10 +14,22 @@ lang: en-GB
 css:
     - ../layout/reset.css
     - ../layout/article.css
-xnos-cleveref: True
-fignos-plus-name: Figure
-tablenos-plus-name: Table
-date: 2021-03-18
+figureTemplate: <span>$$figureTitle$$ $$i$$$$titleDelim$$</span> $$t$$
+tableTemplate: <span>$$tableTitle$$ $$i$$$$titleDelim$$</span> $$t$$
+figPrefix:
+    - "Figure"
+    - "Figures"
+tblPrefix:
+    - "Table"
+    - "Tables"
+eqnPrefix:
+    - "Equation"
+    - "Equations"
+secPrefix:
+    - "Section"
+    - "Sections"
+linkReferences: True
+date: 2024-12-12
 ---
 
 # Introduction

@@ -1,4 +1,5 @@
-PANDOC = "pandoc --filter pantable --filter pandoc-fignos --filter pandoc-tablenos --citeproc"
+PANDOC = "pandoc --filter pantable --filter pandoc-crossref --citeproc -f markdown+mark"
+
 
 rule test:
     message: "Build the test article."
@@ -10,7 +11,7 @@ rule test:
 def pandoc_options(wildcards):
     suffix = wildcards["suffix"]
     if suffix == "html":
-        return "--self-contained --to html5"
+        return "--embed-resources --standalone --to html5"
     elif suffix == "pdf":
         return "--pdf-engine weasyprint"
     elif suffix == "docx":
