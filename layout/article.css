@@ -323,6 +323,11 @@ table caption {
     margin-bottom: 1em;
 }
 
+.katex {
+    font-size: 1.0em;
+    font-family: KlinicSlabFont, KaTeX_Main, serif;
+}
+
 @media print {
     .pagebreak { page-break-before: always; }
 
