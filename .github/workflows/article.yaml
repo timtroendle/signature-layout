@@ -1,5 +1,11 @@
 name: Article
-on: [push, pull_request]
+on:
+    schedule:
+        - cron: "0 4 8 * *" # Runs every eighth day of the month at 4am.
+    push:
+        branches:
+            - main
+    pull_request:
 jobs:
     build_article:
         name: Build a test article
